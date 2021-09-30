@@ -1,128 +1,445 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>CodePen - CSS Animations with SVGs</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/redset.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gallery</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile view -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="js/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- Google fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
+
+    <!-- Template's stylesheets -->
+    <link rel="stylesheet" href="js/megamenu/stylesheets/screen.css">
+    <link rel="stylesheet" href="css/theme-default.css" type="text/css">
+    <link rel="stylesheet" href="js/loaders/stylesheets/screen.css">
+    <link rel="stylesheet" href="css/corporate.css" type="text/css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="fonts/Simple-Line-Icons-Webfont/simple-line-icons.css" media="screen" />
+    <link rel="stylesheet" href="fonts/et-line-font/et-line-font.css">
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/jFlickrFeed/style.css" />
+    <link rel="stylesheet" type="text/css" href="js/cubeportfolio/cubeportfolio.min.css">
+    <link rel="stylesheet" href="css/farmer.css">
+    <link rel="stylesheet" href="css/card.css" />
+    <!-- Template stylesheets END -->
+
+    <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <!-- Style Customizer's stylesheets -->
+    <link rel="stylesheet" type="text/css" href="js/style-customizer/css/spectrum.css">
+    <link rel="stylesheet" type="text/css" href="js/style-customizer/css/style-customizer.css">
+    <link rel="stylesheet/less" type="text/css" href="less/skin.less">
+    <!-- Style Customizer's stylesheets END -->
+
+    <!-- Skin stylesheet -->
+    <link rel="stylesheet" href="css/skin.css">
 
 </head>
 
 <body>
-    <!-- partial:index.partial.html -->
-    <div id="preloader"></div>
+    <!-- <div class="over-loader loader-live">
+        <div class="loader">
+            <div class="loader-item style4">
+                <div class="cube1"></div>
+                <div class="cube2"></div>
+            </div>
+        </div>
+    </div> -->
+    <!--end loading-->
+    <!-- <div class="preloader"></div> -->
+    <div class="wrapper-boxed">
+        <div class="site-wrapper">
+            <div class="topbar-transparent" style="background-color: #576d22;padding: 7px;">
+                <div class="container top-bar-align">
+                    <div class="topbar-left-items">
 
-    <div class="arrow arrow--top">
-        <svg xmlns="http://www.w3.ordg/2000/svg" width="270.11" height="649.9" overflow="visible">
-      <style>
-        .geo-arrow {
-          fill: none;
-          stroke: #fff;
-          stroke-width: 2;
-          stroke-miterlimit: 10
-        }
-      </style>
-      <g class="item-to bounce-1">
-        <path class="geo-arrow draw-in" d="M135.06 142.564L267.995 275.5 135.06 408.434 2.125 275.499z" />
-      </g>
-      <circle class="geo-arrow item-to bounce-2" cx="194.65" cy="69.54" r="7.96" />
-      <circle class="geo-arrow draw-in" cx="194.65" cy="39.5" r="7.96" />
-      <circle class="geo-arrow item-to bounce-3" cx="194.65" cy="9.46" r="7.96" />
-      <g class="geo-arrow item-to bounce-2">
-        <path class="st0 draw-in" d="M181.21 619.5l13.27 27 13.27-27zM194.48 644.5v-552" />
-      </g>
-    </svg>
-    </div>
-    <div class="arrow arrow--bottom">
-        <svg xmlns="http://www.w3.or2g/2000/svg" width="31.35" height="649.9" overflow="visible">
-      <style>
-        .geo-arrow {
-          fill: none;
-          stroke: #fff;
-          stroke-width: 2;
-          stroke-miterlimit: 10
-        }
-      </style>
-      <g class="item-to bounce-1">
-        <circle class="geo-arrow item-to bounce-3" cx="15.5" cy="580.36" r="7.96" />
-        <circle class="geo-arrow draw-in" cx="15.5" cy="610.4" r="7.96" />
-        <circle class="geo-arrow item-to bounce-2" cx="15.5" cy="640.44" r="7.96" />
-        <g class="item-to bounce-2">
-          <path class="geo-arrow draw-in" d="M28.94 30.4l-13.26-27-13.27 27zM15.68 5.4v552" />
-        </g>
-      </g>
-    </svg>
-    </div>
-    <div class="main">
-        <div class="main__text-wrapper">
-            <h1 class="main__title">OPTIMAL MANAGER</h1>
+                        <a href="tel://9980756811" style="color: white;"><i class="uil uil-phone" style="color: white;font-size: 17px;">&nbsp;&nbsp;&nbsp;</i>9980756811</a>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="mailto:suphala.nitte@gmail.com" style="color: white;"><i class="uil uil-envelope" style="color: white;font-size: 17px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;suphala.nitte@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-            <svg xmlns="http://www.w3.ordg/2000/svg" class="dotted-circle" width="352" height="352" overflow="visible">
-  <circle cx="176" cy="176" r="174" fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="12.921,11.9271"/>
-</svg>
-            <div>
-                <h4 style="padding-bottom: 40px; padding-top: 40px;">Intensity of accident</h4>
-                <style>
-                    .slider-width100 {
-                        width: 500px;
-                    }
-                </style>
+            <div class="clearfix"></div>
+            <!--end topbar-->
 
-                <input id="slider11" class="slider-width100" type="range" min="0" max="10" value="1" name="" onChange="rangeSlide(this.value)">
-                <span id="rangeValue" style="color: chartreuse;">1</span>
-                <style>
-                    button {
-                        color: #ffffff;
-                        background-color: #24d0cc;
-                        font-size: 19px;
-                        border: 1px solid #4e66a7;
-                        padding: 10px 30px;
-                        border-radius: 7px;
-                        cursor: pointer
-                    }
-                    
-                    button:hover {
-                        color: #4aaa73;
-                        background-color: #ffffff;
-                    }
-                </style>
-                <!-- <button class="button">Submit</button> -->
+            <div class="col-md-12 nopadding">
+                <div class="header-section white dark-dropdowns style1 links-dark pin-style">
+                    <div class="container">
+                        <div class="mod-menu">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <a href="index.html" title="" class="logo mar-4"> <img src="images/logo/logo.png" alt=""> </a>
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="main-nav">
+                                        <ul class="nav navbar-nav top-nav">
+                                            <!-- <li class="search-parent"> <a href="javascript:void(0)" title=""><i  class="fa fa-adjust" style="font-size: 20px;"></i></a>
+                                                <div class="search-box">
+                                                    <div class="content">
+                                                        <div class="form-control">
+                                                            <input type="text" placeholder="Type to search" />
+                                                            <a href="#" class="search-btn"><i aria-hidden="true" class="fa fa-adjust"></i></a> </div>
+                                                        <a href="#" class="close-btn">x</a> </div>
+                                                </div>
+                                            </li> -->
+                                            <!-- <li class="cart-parent">
+                                                <a href="javascript:void(0)" title=""> <i aria-hidden="true" class="fa fa-shopping-cart"></i> <span class="number"> 4 </span> </a>
+                                                <div class="cart-box">
+                                                    <div class="content">
+                                                        <div class="row">
+                                                            <div class="col-xs-8"> 2 item(s) </div>
+                                                            <div class="col-xs-4 text-right"> <span>$99</span> </div>
+                                                        </div>
+                                                        <ul>
+                                                            <li> <img src="images/cart-img1.jpg" alt=""> Jean & Teashirt <span>$30</span> <a href="#" title="" class="close-btn">x</a> </li>
+                                                            <li> <img src="images/cart-img2.jpg" alt=""> Jean & Teashirt <span>$30</span> <a href="#" title="" class="close-btn">x</a> </li>
+                                                        </ul>
+                                                        <div class="row">
+                                                            <div class="col-xs-6"> <a href="#" title="View Cart" class="btn btn-block btn-warning">View Cart</a> </div>
+                                                            <div class="col-xs-6"> <a href="#" title="Check out" class="btn btn-block btn-primary">Check out</a> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li> -->
+                                            <li class="visible-xs menu-icon">
+                                                <a href="javascript:void(0)" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false"> <i aria-hidden="true" class="uil uil-bars"></i> </a>
+                                            </li>
+                                        </ul>
+
+                                        <div id="menu" class="collapse">
+                                            <ul class="nav navbar-nav">
+                                                <li> <a href="index.html">Home</a> </li>
+                                                <li> <a href="page-about3.html">About Us</a> </li>
+                                                <li> <a href="shop-4-columns.html">Products</a> </li>
+                                                <li> <a href="portfolio-gallery.html">Gallery</a> </li>
+                                                <li> <a href="blog-3-columns.html">Blog</a> </li>
+                                                <li> <a href="page-contact-left-sidebar.html">Contact Us</a> </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end menu-->
 
             </div>
-            <button class="button">Submit</button>
+            <!--end menu-->
+
+            <div class="clearfix"></div>
+
+            <section class="section-side-image clearfix">
+                <div class="img-holder col-md-12 col-sm-12 col-xs-12">
+                    <div class="background-imgholder" style="background:url(images/robert-shunev-mS1nlYbq1kA-unsplash.jpg);"><img class="nodisplay-image" src="images/header-inner-4.jpg" alt="" /> </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 clearfix nopadding">
+                            <div class="header-inner less-height">
+                                <div class="overlay">
+                                    <div class="text text-center">
+                                        <h1 class="text-white" style="font-size: 55px;"><big><strong>Gallery</strong></big></h1>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class=" clearfix"></div>
+            <!--end header section -->
+
+            <div class="clearfix"></div>
+            <!--end section-->
+
+            <section class="sec-tpadding-2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div>
+                            <div id="js-filters-mosaic-flat" class="cbp-l-filters-buttonCenter">
+                                <div data-filter="*" class="cbp-filter-item-active cbp-filter-item"> All
+
+                                </div>
+                                <div data-filter=".graphic" class="cbp-filter-item"> Events
+
+                                </div>
+                                <div data-filter=".web-design" class="cbp-filter-item"> News
+
+                                </div>
+                                <div data-filter=".motion" class="cbp-filter-item"> Team
+
+                                </div>
+                                <div data-filter=".print" class="cbp-filter-item"> Products
+
+                                </div>
+                            </div>
+                            <div id="js-grid-mosaic-flat" class="cbp cbp-l-grid-mosaic-flat">
+                                <div class="cbp-item web-design motion">
+                                    <a href="images/suphala_pics/1.JPG" class="cbp-caption cbp-lightbox">
+                                        <div class="cbp-caption-defaultWrap"> <img src="images/suphala_pics/1.JPG" alt=""> </div>
+                                        <div class="cbp-caption-activeWrap">
+                                            <div class="cbp-l-caption-alignCenter">
+                                                <div class="cbp-l-caption-body">
+                                                    <div class="cbp-l-caption-title">Lorem ipsum dolor sit</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cbp-item print motion">
+                                    <a href="images/suphala_pics/6.JPG" class="cbp-caption cbp-lightbox">
+                                        <div class="cbp-caption-defaultWrap"> <img src="images/suphala_pics/6.JPG" alt=""> </div>
+                                        <div class="cbp-caption-activeWrap">
+                                            <div class="cbp-l-caption-alignCenter">
+                                                <div class="cbp-l-caption-body">
+                                                    <div class="cbp-l-caption-title">Lorem ipsum dolor sit</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cbp-item print motion">
+                                    <a href="images/suphala_pics/10.JPG" class="cbp-caption cbp-lightbox">
+                                        <div class="cbp-caption-defaultWrap"> <img src="images/suphala_pics/10.JPG" alt=""> </div>
+                                        <div class="cbp-caption-activeWrap">
+                                            <div class="cbp-l-caption-alignCenter">
+                                                <div class="cbp-l-caption-body">
+                                                    <div class="cbp-l-caption-title">Lorem ipsum dolor sit</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cbp-item motion graphic">
+                                    <a href="images/suphala_pics/3.JPG" class="cbp-caption cbp-lightbox">
+                                        <div class="cbp-caption-defaultWrap"> <img src="images/suphala_pics/3.JPG" alt=""> </div>
+                                        <div class="cbp-caption-activeWrap">
+                                            <div class="cbp-l-caption-alignCenter">
+                                                <div class="cbp-l-caption-body">
+                                                    <div class="cbp-l-caption-title">Lorem ipsum dolor sit</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cbp-item web-design graphic">
+                                    <a href="images/suphala_pics/8.JPG" class="cbp-caption cbp-lightbox">
+                                        <div class="cbp-caption-defaultWrap"> <img src="images/suphala_pics/8.JPG" alt=""> </div>
+                                        <div class="cbp-caption-activeWrap">
+                                            <div class="cbp-l-caption-alignCenter">
+                                                <div class="cbp-l-caption-body">
+                                                    <div class="cbp-l-caption-title">Lorem ipsum dolor sit</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cbp-item print web-design">
+                                    <a href="images/suphala_pics/11.JPG" class="cbp-caption cbp-lightbox">
+                                        <div class="cbp-caption-defaultWrap"> <img src="images/suphala_pics/11.JPG" alt=""> </div>
+                                        <div class="cbp-caption-activeWrap">
+                                            <div class="cbp-l-caption-alignCenter">
+                                                <div class="cbp-l-caption-body">
+                                                    <div class="cbp-l-caption-title">Lorem ipsum dolor sit</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cbp-item print graphic">
+                                    <a href="images/suphala_pics/9.JPG" class="cbp-caption cbp-lightbox">
+                                        <div class="cbp-caption-defaultWrap"> <img src="images/suphala_pics/9.JPG" alt=""> </div>
+                                        <div class="cbp-caption-activeWrap">
+                                            <div class="cbp-l-caption-alignCenter">
+                                                <div class="cbp-l-caption-body">
+                                                    <div class="cbp-l-caption-title">Lorem ipsum dolor sit</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cbp-item print web-design">
+                                    <a href="images/suphala_pics/5.JPG" class="cbp-caption cbp-lightbox">
+                                        <div class="cbp-caption-defaultWrap"> <img src="images/suphala_pics/5.JPG" alt=""> </div>
+                                        <div class="cbp-caption-activeWrap">
+                                            <div class="cbp-l-caption-alignCenter">
+                                                <div class="cbp-l-caption-body">
+                                                    <div class="cbp-l-caption-title">Lorem ipsum dolor sit</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="clearfix"></div>
+            <br>
+            <br>
+            <br>
+            <!-- end section -->
+
+            <!-- end section -->
+
+            <!--FOOOOOOOOOOOOOOOOOOOOTTTTERRRRR BEGINS HERE!!!!!!-->
+
+            <section class="section-dark sec-padding">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12 colmargin clearfix margin-bottom">
+                            <div>
+                                <div class="footer-logo"><img src="images/logo/new2.jpg" alt="" /></div>
+                                <strong style="color: whitesmoke;">Address:</strong>
+                                <address class="footer_contact" style="color: darkgray;">
+        Suphala Farmers Producer Company Limited
+Kallambadi ,
+        <br>
+        <a href="https://www.google.com/maps/place/Karkala,+Karnataka/@13.2158368,74.9652272,13z/data=!4m5!3m4!1s0x3bbb564562e922d1:0x2488ca62b343f974!8m2!3d13.2150997!4d74.9961799" style="color: chartreuse;text-decoration: underline;">Padav Nitte Village  
+            Karkala - 574110</a>
+        </address>
+
+                                <span><strong style="color: whitesmoke;">Phone:</strong><a href="tel://9980756811" class="footer_contact" style="text-decoration: underline;"> +91 9980756811</a></span><br>
+                                <span><strong style="color: whitesmoke;">Email:</strong> <a href="mailto:suphala.nitte@gmail.com" class="footer_contact" style="text-decoration: underline;"> suphala.nitte@gmail.com </a></span><br>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-xs-12 clearfix margin-bottom">
+                            <h4 class="uppercase footer-title raleway font-weight-5">Quick Links
+                                <hr style="color: white;size: 9px;">
+                            </h4>
+                            <div class="clearfix"></div>
+
+                            <ul class="footer-quick-links-4">
+                                <li><a href="page-about3.html" style="text-decoration:underline"> About Us</a></li>
+                                <li><a href="shop-4-columns.html" style="text-decoration:underline"> Products</a></li>
+                                <li><a href="portfolio-gallery.html" style="text-decoration:underline"> Gallery</a></li>
+                                <li><a href="blog-3-columns.html" style="text-decoration:underline"> Blog</a></li>
+                                <li><a href="page-contact-left-sidebar.html" style="text-decoration:underline"> Contact Us</a></li>
+                                <!-- <li><a href="#"><i class="fa fa-angle-right"></i> Lobortis enim nec nisi</a></li> -->
+                            </ul>
+                        </div>
+                        <br/>
+                        <div class="col-md-3 col-xs-12 clearfix margin-bottom">
+                            <h4 class=" uppercase footer-title raleway font-weight-4 fo-img_slider">Photo Gallery
+                                <hr style="color: white;size: 9px;">
+                            </h4>
+
+                            <!-- <div class="fo-title-bottom-line white"></div> -->
+                            <div class="clearfix"></div>
+                            <div id="owl-demo11" class="owl-carousel">
+                                <div class="item">
+                                    <a href="#"><img src="images/suphala_pics/0f57ab7e-08cb-4620-8356-78048dd91fee[1577].JPG" alt="" class="img-responsive" /></a> <br/>
+                                    <h5 class="text-white nopadding"><a href="#">Distribution of saplings</a></h5>
+                                    <div class="blog1-post-info"><span></span><span style="color: chartreuse;">Aug 17,2021</span> </div>
+                                </div>
+                                <!--end slide item-->
+
+                                <div class="item">
+                                    <a href="#"><img src="images/suphala_pics/91ca40ce-7acf-4d30-93c7-2fbaafd1131e[1583].JPG" alt="" class="img-responsive" /></a> <br/>
+                                    <h5 class="text-white nopadding"><a href="#">Inaugration of suphala</a></h5>
+                                    <div class="blog1-post-info"> <span></span><span style="color: chartreuse;">Jan 16,2021</span> </div>
+                                </div>
+
+                                <!--end slide item-->
+                                <div class="item">
+                                    <a href="#"><img src="images/suphala_pics/8c410568-0ad4-4fa3-a058-f760a24e4d55[1580].JPG" alt="" class="img-responsive" /></a> <br/>
+                                    <h5 class="text-white nopadding"><a href="#">Distribution of saplings</a></h5>
+                                    <div class="blog1-post-info"> <span></span><span style="color: chartreuse;">Aug 17,2021</span> </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <div class="clearfix"></div>
+            <!--end section-->
+
+            <section style="background-color: black;padding: 12px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="fo-copyright-holder text-center" style="color: white;">
+                            <ul class="sc-icons" style="background-color: black;padding: 3px;margin-left: 8px;">
+                                <li><a target="_blank" class="twitter" href="https://twitter.com/codelayers"><i class="uil uil-twitter footer_contact" style="font-size: 26px;"></i></a></li>
+                                <li><a target="_blank" href="https://www.facebook.com/codelayers"><i class="uil uil-facebook-f footer_contact" style="font-size: 26px;"></i></a></li>
+                                <li><a class="active" href="#"><i class="uil uil-youtube footer_contact" style="font-size: 26px;"></i></a></li>
+                                <li><a href="#"><i class="uil uil-linkedin footer_contact" style="font-size: 26px;" ></i></a></li>
+                            </ul>
+                            Copyright © 2021 <a href="index.html" class="footer_contact">Suphala</a> By <a href="https://1.envato.market/codelayers" class="footer_contact"> Inspirante Technologies Pvt Ltd.</a> | All rights reserved. </div>
+                    </div>
+                </div>
+            </section>
+            <div class="clearfix"></div>
+            <!-- end section -->
+            <a href="#" class="scrollup" id="scroll-up">
+                <i class="scrollup_icon uil uil-arrow-circle-up"></i>
+            </a>
+
         </div>
-
+        <!--end site wrapper-->
     </div>
+    <!--end wrapper boxed-->
+    <!-- Scripts -->
+    <script src="js/jquery/jquery.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/style-customizer/js/spectrum.js"></script>
+    <script src="js/less/less.min.js" data-env="development"></script>
+    <script src="js/style-customizer/js/style-customizer.js"></script>
+    <!-- Scripts END -->
 
-    <div class="ytvideo">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KQSQTvW_oVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KQSQTvW_oVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KQSQTvW_oVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KQSQTvW_oVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KQSQTvW_oVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KQSQTvW_oVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KQSQTvW_oVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KQSQTvW_oVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    </div>
-    <!-- partial -->
-
-    <script type="text/javascript">
-        function rangeSlide(value) {
-            document.getElementById('rangeValue').innerHTML = value;
-        }
-    </script>
-
+    <!-- Template scripts -->
+    <script src="js/megamenu/js/main.js"></script>
+    <script src="js/owl-carousel/owl.carousel.js"></script>
+    <script src="js/owl-carousel/custom.js"></script>
+    <script src="js/owl-carousel/owl.carousel.js"></script>
+    <script src="js/owl-carousel/custom.js"></script>
+    <script src="js/parallax/jquery.parallax-1.1.3.js"></script>
+    <script src="js/jFlickrFeed/jflickrfeed.min.js"></script>
     <script>
-        var loader = document.getElementById("preloader");
-
-        window.addEventListener("load", function() {
-            loader.style.display = "none";
-
-        })
+        $('#basicuse').jflickrfeed({
+            limit: 6,
+            qstrings: {
+                id: '133294431@N08'
+            },
+            itemTemplate: '<li>' +
+                '<a href="{{image_b}}"><img src="{{image_s}}" alt="{{title}}" /></a>' +
+                '</li>'
+        });
     </script>
-
+    <script type="text/javascript" src="js/cubeportfolio/jquery.cubeportfolio.min.js"></script>
+    <script type="text/javascript" src="js/cubeportfolio/main-mosaic3.js"></script>
     <!-- <script>
         $(window).load(function() {
             setTimeout(function() {
@@ -131,7 +448,18 @@
             }, 1500);
         })
     </script> -->
+    <script src="js/functions/functions.js"></script>
 
+    <!--BACK TO TOP JS-->
+    <script>
+        function scrollUp() {
+            const scrollUp = document.getElementById('scroll-up');
+            // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+            if (this.scrollY >= 560) scrollUp.classList.add('show-scroll');
+            else scrollUp.classList.remove('show-scroll')
+        }
+        window.addEventListener('scroll', scrollUp)
+    </script>
 
 </body>
 
